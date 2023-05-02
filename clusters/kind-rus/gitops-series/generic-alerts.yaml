@@ -1,0 +1,17 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta2
+kind: Alert
+metadata:
+  name: generic
+  namespace: gitops-series
+spec:
+  eventSeverity: info
+  eventSources:
+  - kind: GitRepository
+    name: '*'
+  - kind: HelmRepository
+    name: '*'
+  - kind: HelmRelease
+    name: '*'
+  providerRef:
+    name: generic
