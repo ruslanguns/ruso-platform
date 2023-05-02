@@ -11,4 +11,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: podinfo
+    namespace: gitops-series
   targetNamespace: default
