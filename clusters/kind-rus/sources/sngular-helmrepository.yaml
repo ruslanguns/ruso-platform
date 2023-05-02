@@ -6,5 +6,5 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m0s
-  url: https://sngular.github.io/gitops-helmrepository/
+  url: https://sngular.github.io/gitops-helmrepository
   
