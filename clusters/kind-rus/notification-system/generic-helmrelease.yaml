@@ -8,10 +8,10 @@ spec:
   chart:
     spec:
       chart: webhook
+      version: webhook-0.1.1
       reconcileStrategy: ChartVersion
       sourceRef:
-        kind: HelmRepository
-        name: sngular
+        kind: GitRepository
+        name: webhook
         namespace: flux-system
-      version: 0.1.1
   interval: 1m0s

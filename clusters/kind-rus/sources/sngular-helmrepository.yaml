@@ -1,10 +1,16 @@
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta2
-kind: HelmRepository
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
 metadata:
-  name: sngular
+  name: webhook
   namespace: flux-system
 spec:
-  interval: 5m0s
-  url: https://sngular.github.io/gitops-helmrepository
-  
+  interval: 10m0s
+  ref:
+    branch: main
+  ignore: |
+    # exclude all
+    /*
+    # include charts directory
+    !/charts/webhook
+  url: https://github.com/sngular/gitops-helmrepository
