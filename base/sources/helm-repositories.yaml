@@ -7,3 +7,12 @@ metadata:
 spec:
   interval: 60m
   url: https://solr.apache.org/charts
+--- 
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: keitaro-charts
+  namespace: flux-system
+spec:
+  interval: 60m
+  url: https://keitaro-charts.storage.googleapis.com
