@@ -1,0 +1,20 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: ckan
+  namespace: ckan
+spec:
+  chart:
+    spec:
+      chart: ckan
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: keitaro-charts
+        namespace: flux-system
+      version: "3.3.0"
+  interval: 1m0s
+  targetNamespace: ckan
+  values: ./values.yaml
+    
