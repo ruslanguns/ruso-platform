@@ -17,7 +17,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 60m
-  url: https://ot-container-kit.github.io/helm-charts/
+  url: https://keitaro-charts.storage.googleapis.com
 --- 
 # Opstree Solution Helm Repository
 # https://github.com/OT-CONTAINER-KIT/helm-charts/tree/main
