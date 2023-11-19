@@ -8,6 +8,8 @@ spec:
   interval: 60m
   url: https://solr.apache.org/charts
 --- 
+# Keitaro - Consultant
+# - CKAN
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
@@ -15,4 +17,15 @@ metadata:
   namespace: flux-system
 spec:
   interval: 60m
-  url: https://keitaro-charts.storage.googleapis.com
+  url: https://ot-container-kit.github.io/helm-charts/
+--- 
+# Opstree Solution Helm Repository
+# - Redis Operator
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: ot-helm
+  namespace: flux-system
+spec:
+  interval: 60m
+  url: https://ot-container-kit.github.io/helm-charts/
