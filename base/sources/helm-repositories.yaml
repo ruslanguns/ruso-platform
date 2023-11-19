@@ -20,6 +20,7 @@ spec:
   url: https://ot-container-kit.github.io/helm-charts/
 --- 
 # Opstree Solution Helm Repository
+# https://github.com/OT-CONTAINER-KIT/helm-charts/tree/main
 # - Redis Operator
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
