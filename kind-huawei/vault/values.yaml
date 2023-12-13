@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: vault-values
+  namespace: vault
+data:
+  values.yaml: |
+    # Default values for vault.
+    server
+      dev
+        enabled: true
+    injector
+      enabled: false
+    csi
+      enabled: true
