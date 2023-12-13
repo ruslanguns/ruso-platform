@@ -1,4 +1,8 @@
 apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jupyterhub-values
+  namespace: jupyterhub
 data:
   values.yaml: |
     fullnameOverride: ""

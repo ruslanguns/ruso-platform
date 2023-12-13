@@ -17,6 +17,7 @@ spec:
   interval: 1m0s
   targetNamespace: jupyterhub
   valuesFrom:
-    - kind: ConfigMap
-      name: "jupyterhub-values"
-      valuesKey: values.yaml
+  - kind: ConfigMap
+    name: jupyterhub-values
+    valuesKey: values.yaml
+    optional: false
