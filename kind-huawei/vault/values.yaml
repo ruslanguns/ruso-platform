@@ -5,10 +5,10 @@ metadata:
   namespace: vault
 data:
   values.yaml: |
-    server
-      dev
+    server:
+      dev:
         enabled: true
-    injector
+    injector:
       enabled: false
-    csi
+    csi:
       enabled: true
