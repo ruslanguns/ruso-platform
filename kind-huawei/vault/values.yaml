@@ -5,7 +5,6 @@ metadata:
   namespace: vault
 data:
   values.yaml: |
-    # Default values for vault.
     server
       dev
         enabled: true
