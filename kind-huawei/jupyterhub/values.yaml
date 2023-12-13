@@ -166,7 +166,7 @@ data:
         periodSeconds: 2
         failureThreshold: 1000
         timeoutSeconds: 1
-      existingSecret: jupyter-secret
+      existingSecret: jupyterhub-secret
       serviceAccount:
         create: true
         name:
