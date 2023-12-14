@@ -8,7 +8,6 @@ spec:
   interval: 60m
   url: https://hub.jupyter.org/helm-chart/
 ---
----
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
@@ -18,3 +17,14 @@ spec:
   interval: 60m
   url: https://helm.releases.hashicorp.com
 ---
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: 1password
+  namespace: flux-system
+spec:
+  interval: 60m
+  url: https://1password.github.io/connect-helm-charts
+---
+
