@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: 1password-values
+  namespace: 1password
+data:
+  values.yaml: |
+    connect:
+      credentialsName: op-credentials
+      credentialsKey: op-session
+    operator:
+      create: true
+      token:
+        name: onepassword-token
+        key: token
