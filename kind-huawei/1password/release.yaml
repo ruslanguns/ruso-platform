@@ -1,0 +1,23 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: 1password-connect
+  namespace: 1password
+spec:
+  chart:
+    spec:
+      chart: connect
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: connect
+        namespace: flux-system
+      version: "1.14.0"
+  interval: 1m0s
+  targetNamespace: 1password
+  valuesFrom:
+  - kind: ConfigMap
+    name: 1password-values
+    valuesKey: values.yaml
+    optional: false
