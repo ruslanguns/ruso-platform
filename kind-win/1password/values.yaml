@@ -13,3 +13,4 @@ data:
       token:
         name: onepassword-token
         key: token
+      pollingInterval: 30
