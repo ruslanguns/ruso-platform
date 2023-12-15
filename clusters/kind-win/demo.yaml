@@ -12,5 +12,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./kind-huawei/demo
+  path: ./kind-win/demo
   prune: true
