@@ -1,0 +1,12 @@
+# This file has been created with:
+# cat <<EOF > ./clusters/{cluster-name}/.sops.yaml
+# creation_rules:
+#   - path_regex: .*.yaml
+#     encrypted_regex: ^(data|stringData)$
+#     pgp: ${KEY_FP}
+# EOF
+
+creation_rules:
+  - path_regex: .*.yaml
+    encrypted_regex: ^(data|stringData)$
+    pgp: A547DF661D5A68E3E9CF7460FA2AF03E06BF9BC1
