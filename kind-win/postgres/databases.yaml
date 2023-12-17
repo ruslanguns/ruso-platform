@@ -9,6 +9,8 @@ spec:
   volume:
     size: 5Gi
   numberOfInstances: 1
+  postgresql:
+    version: "12"
   preparedDatabases:
     demo:
       defaultUsers: true
