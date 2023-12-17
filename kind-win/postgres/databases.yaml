@@ -1,0 +1,24 @@
+---
+apiVersion: "acid.zalan.do/v1"
+kind: postgresql
+metadata:
+  name: databases
+  namespace: platform
+spec:
+  teamId: databases
+  volume:
+    size: 5Gi
+  numberOfInstances: 1
+  preparedDatabases:
+    demo:
+      defaultUsers: true
+      schemas:
+        public:
+          defaultRoles: false
+  resources:
+    limits:
+      cpu: 250m
+      memory: 256Mi
+    requests:
+      cpu: 100m
+      memory: 128Mi
