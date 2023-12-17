@@ -1,0 +1,39 @@
+apiVersion: v1
+data:
+    password: ENC[AES256_GCM,data:oOtmih3q+GYE94y2LFAKK0JeFZXj9IVDADZIeOS9Yhcj8Ul+vN2YnyqAlr4MkRxNdJ/tAKgWZe8IyMzGrgMJr93rfCE+Cl9pTmsYiqecIcQYQ60l,iv:QI4j4XlcYMMjvNz8WcKPaG9bcE3W5zHy+7HEoL3xxhw=,tag:4JIipOkQuKfwpePbN6YDJw==,type:str]
+    username: ENC[AES256_GCM,data:BNXBVP+UEDJWgumxe3uwnQ==,iv:VVP4BfCwRukgJU46iF7Bd0NhDLNwMzeOVdAkocE9VIY=,tag:E7PIAsNZp6uIml+MVzCi+g==,type:str]
+kind: Secret
+metadata:
+    name: cluster-user-auth
+    namespace: flux-system
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2023-12-17T10:56:30Z"
+    mac: ENC[AES256_GCM,data:iYnXYeQpPNtr48A1iwenEkEyFSaFcYYXxPlLAAW1LIwVC+kNVPp3f016KW/9PKIC1WXeAoETFQQJueikV3Qqpkqjn8WUkXIRWPj2uVTNydSpFhef9fxTolue0+cxcBUqvsz5FCNpWIT+BF2fXaf6hEFcxL8/l8T3agFHAT5rCr0=,iv:Sk98yWOpf7Mw4zRXpZa1rojmAhoj2S6q6PIaUE/EHmg=,tag:+OWM2JXHh28bW+Bz7wmPSA==,type:str]
+    pgp:
+        - created_at: "2023-12-17T10:56:29Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA2+ku1+JwIKZAQ//SI85JOKMHoJSvBFc8t+x0B5u0FTWsxfd/l4AYbTjpIvH
+            lTMR8ofxeZ82EbxmJmqqZCnCTsXYXb2fpOH8pCzBVs5hmkz+W0fE6EOwlazxJ0O0
+            2Lqh2TeKo33rnP1zsN+YWpC3phNqTwjcYOTjU6NT7soRxwkNbVY1/sXgKSt3KL84
+            POPs1Ax06y7c252Z/S39++/9z7XB+lxDQxgKyENsKPXTKTdjPxZRx7rwRWRNif6n
+            kwJax9O8rkL/kNmGDMXxlctaF42gPEQhcVFabvp0R+U8I07XmK5OLbQpNLN/kt86
+            lCLRVq4BRwC/oKk15ImjJPODdxxzrdyMmAVhEcOqYesEG6kD/2FX+929gr6FMe5i
+            oz/4NHlC9S1/ALtkRVIE5FbNbWgDibHB/iWqKQkjYX4VEL/WPnI0jpneCE3N2Vsk
+            H0MzZ9RwbKIbLexcJShs6D4qfQoFbctbry7GIOqgwySLVSvwziDa6tRdNJkuIwsT
+            FIgmNL6y6JuoEWFSZfGHvcNXfgTJCp//KOV2UUxPArkDjJLqyU1zhmDYsGLKCsDJ
+            gegw1iBcYkgNeqzTUR86avSjO79YDncSwnUd0Yf/QU6zSovu+IqG0q+66Quile2M
+            IMsClK4nXVJQxucFNBHFrUzyf8zYP7n3ZL47sNwJPifu6wtdKy6Ul5DXUBvYfDHS
+            XgEoesKbxPZhJcnrqWX7FGUnUtw89WD9H1mi2sKJxN1tFBi1aE+0GUTkqU+3+nqz
+            klJasu09EW4q3mU7FSJ5AAc/7h1udF/z0jIZRJUdGgqIM9iKGHVBehvllfrdcTw=
+            =mOhZ
+            -----END PGP MESSAGE-----
+          fp: A547DF661D5A68E3E9CF7460FA2AF03E06BF9BC1
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3
