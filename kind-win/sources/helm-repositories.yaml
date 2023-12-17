@@ -34,3 +34,14 @@ metadata:
 spec:
   interval: 60m
   url: https://opensource.zalando.com/postgres-operator/charts/postgres-operator
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: jupyterhub
+  namespace: flux-system
+spec:
+  interval: 60m
+  url: https://hub.jupyter.org/helm-chart/
+---
