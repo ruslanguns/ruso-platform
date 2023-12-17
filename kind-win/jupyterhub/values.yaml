@@ -86,19 +86,19 @@ data:
         ##   needs to be done in JupyterHub itself for a fully highly available (HA)
         ##   deployment of JupyterHub on k8s is to be possible.
         type: Recreate
-      db:
-        type: sqlite-pvc
-        upgrade:
-        pvc:
-          annotations: {}
-          selector: {}
-          accessModes:
-            - ReadWriteOnce
-          storage: 1Gi
-          subPath:
-          storageClassName:
-        url:
-        password:
+      # db:
+      #   type: sqlite-pvc
+      #   upgrade:
+      #   pvc:
+      #     annotations: {}
+      #     selector: {}
+      #     accessModes:
+      #       - ReadWriteOnce
+      #     storage: 1Gi
+      #     subPath:
+      #     storageClassName:
+      #   url:
+      #   password:
       labels: {}
       annotations: {}
       command: []
