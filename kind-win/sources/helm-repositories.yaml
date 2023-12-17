@@ -24,3 +24,13 @@ spec:
   interval: 1h0m0s
   type: oci
   url: oci://ghcr.io/weaveworks/charts
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: postgres-operator
+  namespace: flux-system
+spec:
+  interval: 60m
+  url: https://opensource.zalando.com/postgres-operator/charts/postgres-operator
