@@ -668,14 +668,22 @@ data:
           pullPolicy:
           pullSecrets: []
 
+    # ingress:
+    #   enabled: false
+    #   annotations: {}
+    #   ingressClassName:
+    #   hosts: []
+    #   pathSuffix:
+    #   pathType: Prefix
+    #   tls: []
+
     ingress:
-      enabled: false
-      annotations: {}
-      ingressClassName:
-      hosts: []
-      pathSuffix:
-      pathType: Prefix
-      tls: []
+      enabled: true
+      hosts:
+        - host: jupyterhub.local
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
 
     # cull relates to the jupyterhub-idle-culler service, responsible for evicting
     # inactive singleuser pods.
