@@ -2,4 +2,5 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - namespace.yaml
-  - 1password-item.yaml
+  - 1password-secret-demo.yaml
+  - 1password-deployment-demo.yaml
