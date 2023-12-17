@@ -12,7 +12,7 @@ spec:
   postgresql:
     version: "12"
   preparedDatabases:
-    demo:
+    jupyterhub:
       defaultUsers: true
       schemas:
         public:
