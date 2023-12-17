@@ -14,7 +14,7 @@ spec:
   url: ssh://git@github.com/ruslanguns/ruso-platform
   ignore: |
     # kind configuration
-    ./**/kind.yaml
+    ./clusters/kind-win/kind.yaml
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
