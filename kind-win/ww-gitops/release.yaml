@@ -20,3 +20,10 @@ spec:
       create: true
       passwordHash: $2a$10$zQZYgOEMxiepeIiycPlqmuvyti1G3YA7lgJPME6Am1BKjYc2qHKoi # admin123 
       username: admin
+    ingress:
+      enabled: true
+      hosts:
+        - host: gitops.local
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
