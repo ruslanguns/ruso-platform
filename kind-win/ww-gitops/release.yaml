@@ -17,5 +17,5 @@ spec:
   values:
     adminUser:
       create: true
-      createSecret: true
+      createSecret: false
 
