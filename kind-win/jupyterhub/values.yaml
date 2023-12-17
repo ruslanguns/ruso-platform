@@ -680,10 +680,7 @@ data:
     ingress:
       enabled: true
       hosts:
-        - host: jupyterhub.local
-          paths:
-            - path: /
-              pathType: ImplementationSpecific
+        - jupyterhub.local
 
     # cull relates to the jupyterhub-idle-culler service, responsible for evicting
     # inactive singleuser pods.
