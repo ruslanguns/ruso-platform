@@ -1,0 +1,23 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: spark-operator
+  namespace: spark-operator
+spec:
+  chart:
+    spec:
+      chart: spark-operator
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: HelmRepository
+        name: spark-operator
+        namespace: flux-system
+      version: "1.1.28"
+  interval: 1m0s
+  targetNamespace: spark-operator
+  valuesFrom:
+  - kind: ConfigMap
+    name: spark-operator-values
+    valuesKey: values.yaml
+    optional: false
