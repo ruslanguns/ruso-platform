@@ -45,3 +45,12 @@ spec:
   interval: 60m
   url: https://hub.jupyter.org/helm-chart/
 ---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: spark-operator
+  namespace: flux-system
+spec:
+  interval: 60m
+  url: https://googlecloudplatform.github.io/spark-on-k8s-operator
+---
