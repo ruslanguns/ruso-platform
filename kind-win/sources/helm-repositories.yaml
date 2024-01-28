@@ -54,7 +54,7 @@ spec:
   interval: 60m
   url: https://googlecloudplatform.github.io/spark-on-k8s-operator
 ---
-apiVersion: source.toolkit.fluxcd.io/v1beta1
+apiVersion: source.toolkit.fluxcd.io/v1beta2
 kind: OCIRepository
 metadata:
   name: vault-operator
