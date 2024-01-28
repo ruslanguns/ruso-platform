@@ -55,7 +55,7 @@ spec:
   url: https://googlecloudplatform.github.io/spark-on-k8s-operator
 ---
 apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: HelmRepository
+kind: OCIRepository
 metadata:
   name: vault-operator
   namespace: flux-system
